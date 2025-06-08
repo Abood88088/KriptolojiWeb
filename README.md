@@ -5,7 +5,7 @@
 🌐 Canlı Uygulama Linki:
 📎 http://kriptolojiweb.somee.com/ – Uygulamayı tarayıcınızda deneyin!
 
-![image](https://github.com/user-attachments/assets/4f305235-0e34-4616-a6dd-ade44d8703dd)
+![image](https://github.com/user-attachments/assets/109bbd21-9cc1-41c0-8441-a7c81e8d82fc)
 
 
 ## 🌟 Temel Özellikler
@@ -20,7 +20,7 @@
 ## 🖼️  Detaylı Ekran Görüntüleri ve Testler
 
 ### 1. RSA Şifreleme
-![image](https://github.com/user-attachments/assets/16e125d2-89fa-463e-95d3-764fcd810184)   ![image](https://github.com/user-attachments/assets/854d97ae-3574-4206-842a-f329504b4558)
+![image](https://github.com/user-attachments/assets/31f65da6-c308-43ca-a5cc-11e477579145)   ![image](https://github.com/user-attachments/assets/a3aebf6b-e1bf-4837-b386-5dc1ca651156)
 
 **Test Senaryosu**:  
 - **Düz Metin**: `Merhaba Dünya!`  
@@ -29,7 +29,7 @@
 - *✅ Doğrulama: Aynı public/private key çiftiyle çözülebilir.*
 
 ### 2. RSA Şifre Çözme
-![image](https://github.com/user-attachments/assets/b68b3a16-ce6b-4f74-84af-c45935955337)   ![image](https://github.com/user-attachments/assets/e6b8e959-5f45-4a2e-ae7b-be218b8256e5)
+![image](https://github.com/user-attachments/assets/c2f536dc-ade2-446b-9da5-bb5d9ee621c4)   ![image](https://github.com/user-attachments/assets/bf25486c-ad6e-460f-8565-6492f309defb)
 
 **Test Senaryosu**:  
 - **Şifreli Metin**: Yukarıdaki şifrelenmiş çıktı  
@@ -38,7 +38,7 @@
 - *✅ Doğrulama: Orijinal metinle eşleşiyor.*
 
 ### 3. Anahtar Yönetimi
-![image](https://github.com/user-attachments/assets/9d7404b4-a6c6-41fb-8be5-2a4b4467d54c)   ![image](https://github.com/user-attachments/assets/21e35c3a-0cc6-48b2-bafd-a5868c745cc1)
+![image](https://github.com/user-attachments/assets/2840b45c-a139-478c-8459-209e8ec01841)   ![image](https://github.com/user-attachments/assets/e03ba2d6-d81b-4ad4-8c61-d3bf13400687)
 
 **Test Senaryosu**:  
 - **Buton**: "Yeni Anahtar Oluştur"  
@@ -55,14 +55,14 @@
 
 ### 4. SHA-256 Hash
 **Test Senaryosu**:  
-![image](https://github.com/user-attachments/assets/24cc9efe-721c-48db-88ef-2680813f05c4)   ![image](https://github.com/user-attachments/assets/42790f5c-3def-429b-851d-4bdcc9ad0854)
+![image](https://github.com/user-attachments/assets/2c879ce2-84e4-4a1f-8ba9-0ce0833d0da2)   ![image](https://github.com/user-attachments/assets/106c207c-b3f7-4e63-845c-e80370be3309)
 
 **A) Metin Hashleme**
 - **Girdi**: kriptoloji123
 - **Hash Sonucu**: a32f69...11f22 (64 karakter hex)
 - *✅ Doğrulama: Online SHA-256 tool ile aynı sonuç alındı.*
 
-![image](https://github.com/user-attachments/assets/587fe1ab-f257-40f1-b24d-c8d176ce2fab)   ![image](https://github.com/user-attachments/assets/e3709322-cac5-4cc8-9cab-bfae84e6f68d)
+![image](https://github.com/user-attachments/assets/52c63287-7bc9-4cb9-a028-87a5c8a8e93e)   ![image](https://github.com/user-attachments/assets/cc076920-09c4-4b50-b894-8b25cbbcf53d)
 
 **B) Dosya Hashleme**
 - **Test Dosyası**: example.txt (İçerik: TEST123)
