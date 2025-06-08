@@ -25,7 +25,7 @@
 **Test Senaryosu**:  
 - **Düz Metin**: `Merhaba Dünya!`  
 - **Public Key**: Otomatik oluşturulan anahtar kullanıldı  
-- **Sonuç**: `Şifrelenmiş Metin: hkwz9FUa6eOPidaCng...` (Base64 formatında)
+- **Sonuç**: `Şifrelenmiş Metin: Ep12yd...` (Base64 formatında)
 - *✅ Doğrulama: Aynı public/private key çiftiyle çözülebilir.*
 
 ### 2. RSA Şifre Çözme
