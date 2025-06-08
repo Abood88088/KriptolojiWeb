@@ -59,7 +59,7 @@
 
 **A) Metin Hashleme**
 - **Girdi**: kriptoloji123
-- **Hash Sonucu**: a32f69...11f22 (64 karakter hex)
+- **Hash Sonucu**: 32f69...11f22 (64 karakter hex)
 - *✅ Doğrulama: Online SHA-256 tool ile aynı sonuç alındı.*
 
 ![image](https://github.com/user-attachments/assets/52c63287-7bc9-4cb9-a028-87a5c8a8e93e)   ![image](https://github.com/user-attachments/assets/cc076920-09c4-4b50-b894-8b25cbbcf53d)
