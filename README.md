@@ -2,8 +2,8 @@
 
 **RSA Şifreleme, Çözme, Anahtar Yönetimi ve SHA-256 Hash Hesaplama Uygulaması**
 
-🌐 <a href="http://kriptolojiweb.somee.com/" target="_blank">🔗 Uygulamayı canlı olarak denemek için buraya tıklayın</a>
-
+🌐 Canlı Uygulama Linki:
+📎 http://kriptolojiweb.somee.com/ – Uygulamayı tarayıcınızda deneyin!
 ![image](https://github.com/user-attachments/assets/4f305235-0e34-4616-a6dd-ade44d8703dd)
 
 
