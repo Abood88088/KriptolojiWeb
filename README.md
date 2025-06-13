@@ -71,7 +71,10 @@ cd KriptolojiWeb
 dotnet restore
 dotnet run
 
-```markdown
-Tarayıcınızdan `https://localhost:5001` adresine giderek uygulamayı görüntüleyebilirsiniz.
+## 🚀 Uygulamanın Çalıştırılması
+
+Kurulum tamamlandıktan sonra, `dotnet run` komutu ile uygulamayı başlatın ve tarayıcınızdan `https://localhost:5001` adresine giderek deneyebilirsiniz.
+
+
 
 
