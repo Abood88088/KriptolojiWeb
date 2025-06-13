@@ -2,10 +2,15 @@
 
 **RSA Şifreleme, Çözme, Anahtar Yönetimi ve SHA-256 Hash Hesaplama Uygulaması**
 
-🌐 Canlı Uygulama Linki:
-📎 http://kriptolojiweb.somee.com/ – Uygulamayı tarayıcınızda deneyin!
+RSA, açık anahtarlı şifreleme algoritmasıdır ve veriyi güvenli şekilde şifrelemek için kullanılır.
+Şifre çözme işlemi, yalnızca özel anahtara sahip olan kişi tarafından yapılabilir.
+SHA-256, bir metin ya da dosyanın sabit uzunlukta ve eşsiz bir özetini üretir.
+Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik araçlarıdır.
 
-![image](https://github.com/user-attachments/assets/109bbd21-9cc1-41c0-8441-a7c81e8d82fc)
+🌐 Canlı Uygulama Linki:
+📎 [http://kriptolojiweb.somee.com/](http://kriptokutusu.somee.com/) – Uygulamayı tarayıcınızda deneyin!
+
+![image](https://github.com/user-attachments/assets/703fc09d-2ae0-4dc2-881a-e2c01772aaf9)
 
 
 ## 🌟 Temel Özellikler
