@@ -8,7 +8,7 @@ SHA-256, bir metin ya da dosyanın sabit uzunlukta ve eşsiz bir özetini üreti
 Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik araçlarıdır.
 
 🌐 Canlı Uygulama Linki:
-📎 [http://kriptolojiweb.somee.com/](http://kriptokutusu.somee.com/) – Uygulamayı tarayıcınızda deneyin!
+📎 [http://kriptokutusu.somee.com/](http://kriptokutusu.somee.com/) – Uygulamayı tarayıcınızda deneyin!
 
 ![image](https://github.com/user-attachments/assets/baddc637-8507-413e-8bf4-f51c96dc5a66)
 
