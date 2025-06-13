@@ -10,10 +10,6 @@ Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik a
 🌐 Canlı Uygulama Linki:
 📎 [http://kriptolojiweb.somee.com/](http://kriptokutusu.somee.com/) – Uygulamayı tarayıcınızda deneyin!
 
-![image](https://github.com/user-attachments/assets/703fc09d-2ae0-4dc2-881a-e2c01772aaf9)
-
-![image](https://github.com/user-attachments/assets/c181d110-ddf7-4804-9ea9-79751edd1945)
-
 ![image](https://github.com/user-attachments/assets/baddc637-8507-413e-8bf4-f51c96dc5a66)
 
 
@@ -29,16 +25,12 @@ Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik a
 ## 🖼️  Detaylı Ekran Görüntüleri ve Testler
 
 ### 1. RSA Şifreleme
-![image](https://github.com/user-attachments/assets/31f65da6-c308-43ca-a5cc-11e477579145)   ![image](https://github.com/user-attachments/assets/a3aebf6b-e1bf-4837-b386-5dc1ca651156)
+![image](https://github.com/user-attachments/assets/4ba1fe73-fe80-4890-950e-ecdbcd860709)   ![image](https://github.com/user-attachments/assets/f64b1dc6-a9e7-4105-8447-d42cf9e23695)
 
-**Test Senaryosu**:  
-- **Düz Metin**: `Merhaba Dünya!`  
-- **Public Key**: Otomatik oluşturulan anahtar kullanıldı  
-- **Sonuç**: `Şifrelenmiş Metin: Ep12yd...` (Base64 formatında)
-- *✅ Doğrulama: Aynı public/private key çiftiyle çözülebilir.*
+Bu görsellerde RSA şifreleme süreci örnekleniyor. İlk görselde 'Merhaba Dünya!' metni, verilen public key kullanılarak şifreleniyor. İkinci görselde ise kullanıcı tarafından girilen 'Şifrelenecek metin...', yine bir public key ile işlenerek şifrelenmiş hale getiriliyor. Her iki örnek de asimetrik şifrelemenin temel işleyişini sergiliyor.
 
 ### 2. RSA Şifre Çözme
-![image](https://github.com/user-attachments/assets/c2f536dc-ade2-446b-9da5-bb5d9ee621c4)   ![image](https://github.com/user-attachments/assets/bf25486c-ad6e-460f-8565-6492f309defb)
+![image](https://github.com/user-attachments/assets/dc739896-011c-460c-85f3-38ea0a1e21ad)   ![image](https://github.com/user-attachments/assets/ef4123f5-bce1-4ed0-a37a-140b6338d8d2)
 
 **Test Senaryosu**:  
 - **Şifreli Metin**: Yukarıdaki şifrelenmiş çıktı  
