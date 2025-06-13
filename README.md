@@ -51,7 +51,7 @@ Bu görseller, SHA-256 algoritması kullanarak dosyaların hash değerlerinin na
 
 ## 🛠️ Teknoloji Yığını
 ### Backend
-- **ASP.NET Core MVC** (v9.0)
+- **ASP.NET Core MVC** (v8.0)
 - **C#** (System.Security.Cryptography kütüphanesi)
 - **RSA Anahtar Boyutu**: 2048-bit
 - **SHA-256** Implementasyonu
