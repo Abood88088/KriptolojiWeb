@@ -35,7 +35,6 @@ Bu görsellerde RSA şifre çözme işlemi adım adım gösteriliyor. İlk görs
 
 Bu görseller RSA şifreleme sistemindeki anahtar yönetim sürecini gösteriyor. İlk görselde Base64 formatında örnek public/private anahtar çifti ve şifreleme-çözme arayüzü bulunuyor. İkinci görselde ise 'YENİ ANAHTAR OLUŞTUR' butonuyla dinamik olarak yeni RSA anahtar çiftleri üretilebildiği ve bu anahtarların şifreleme işlemlerinde kullanılabileceği görülüyor.
 Her iki örnekte de ---BEGIN--- ve ---END--- tag'leri arasında gösterilen anahtarlar, asimetrik şifrelemenin temel bileşenlerini oluşturuyor. Public key şifreleme, private key ise çözme işlemi için kullanılıyor.
-Anahtar yönetimi bölümleri, kullanıcıların yeni anahtar çiftleri oluşturabileceğini ve bu anahtarları şifreleme/çözme işlemlerinde kullanabileceğini gösteriyor. Anahtarların kopyalanabilir olması pratik kullanım kolaylığı sağlıyor.
 
 ### 4. SHA-256 Hash
 **A) Metin Hashleme**
