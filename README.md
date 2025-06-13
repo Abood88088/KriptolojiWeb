@@ -61,4 +61,12 @@ Bu görseller, SHA-256 algoritması kullanarak dosyaların hash değerlerinin na
 - **JavaScript** (Dosya işlemleri ve UI etkileşimleri)
 - **Clipboard API** (Kopyala butonları için)
 
+## ⚙️ Kurulum
+
+Projeyi yerel ortamınızda çalıştırmak için:
+
+```bash
+git clone https://github.com/Abood88088/kriptokutusu.git
+cd kriptokutusu
+dotnet run
 
