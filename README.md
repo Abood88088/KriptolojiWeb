@@ -12,6 +12,7 @@ Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik a
 
 ![image](https://github.com/user-attachments/assets/703fc09d-2ae0-4dc2-881a-e2c01772aaf9)
 
+![image](https://github.com/user-attachments/assets/c181d110-ddf7-4804-9ea9-79751edd1945)
 
 ## 🌟 Temel Özellikler
 | Özellik | Açıklama |
