@@ -76,3 +76,5 @@ dotnet run
 
 Kurulum tamamlandıktan sonra, `dotnet run` komutu ile uygulamayı başlatın ve tarayıcınızdan `https://localhost:5001` adresine giderek deneyebilirsiniz.
 
+
+
