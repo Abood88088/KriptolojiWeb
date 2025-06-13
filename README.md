@@ -15,21 +15,7 @@ Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik a
 
 # 🌟 Temel Özellikler
 
-**🔐 RSA Şifreleme & Çözme**
-
-Public key ile metin şifreleme ve private key ile şifre çözme işlemleri.
-
-**🔑 Dinamik Anahtar Üretimi**
-
-Tek tıkla yeni RSA anahtar çifti (public/private) oluşturma.
-
-**📄 SHA-256 Hash Hesaplama**
-
-Metinler ve dosyalar için benzersiz hash değerleri üretme.
-
-**🛡️ Veri Bütünlüğü Doğrulama**
-
-Dosya veya metinlerdeki değişiklikleri hash karşılaştırmasıyla tespit etme.
+Bu sistem, RSA algoritmasıyla metin şifreleme (public key) ve çözme (private key) işlemlerini gerçekleştiriyor. Kullanıcılar kolayca yeni RSA anahtar çiftleri oluşturabiliyor ve bu anahtarlarla güvenli veri aktarımı yapabiliyor. Ayrıca, hem metinler hem de dosyalar için SHA-256 hash hesaplama özelliği sunuyor. Tüm bu işlemler, veri güvenliği ve bütünlüğünü sağlamak için kullanılıyor.
 
 
 ## 🖼️  Detaylı Ekran Görüntüleri ve Testler
