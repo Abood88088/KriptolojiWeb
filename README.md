@@ -77,6 +77,6 @@ Kurulum tamamlandıktan sonra, `dotnet run` komutu ile uygulamayı başlatın ve
 
 
 ## 👨‍💻 Geliştirici
-ABDUL RAHMAN KHANOUM
+**ABDUL RAHMAN KHANOUM**
 
 
