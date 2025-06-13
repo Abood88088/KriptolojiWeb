@@ -45,7 +45,8 @@ Bu görseller SHA-256 hash algoritmasının kullanımını gösteriyor. İlk gö
 **B) Dosya Hashleme**
 ![image](https://github.com/user-attachments/assets/21a5455e-3c23-479e-8915-d0ab02811712)   ![image](https://github.com/user-attachments/assets/66fcb076-c598-404e-b3ce-27603e2370e4)
 
-Bu görseller, SHA-256 algoritması kullanarak dosyaların hash değerlerinin nasıl hesaplandığını gösteriyor. İlk görselde kullanıcının hash'ini hesaplamak istediği dosyayı seçebileceği bir dosya tarayıcı arayüzü bulunuyor. Kullanıcılar PDF, DOCX gibi çeşitli dosya türlerini seçebiliyor. İkinci görselde ise 'deneme.pdf' dosyası için hesaplanmış gerçek bir SHA-256 hash örneği görülüyor: '9E3FBF...5BAEE4'. Bu 64 karakterlik hexadecimal hash kodu, dosyanın dijital parmak izi gibi çalışarak dosya bütünlüğünü doğrulamaya yarıyor. SHA-256 dosya hashleme özellikle yazılım dağıtımlarında, dijital sertifikalarda ve güvenli dosya transferlerinde sıkça kullanılıyor.
+Bu görseller, SHA-256 algoritması kullanarak dosyaların hash değerlerinin nasıl hesaplandığını gösteriyor. İlk görselde kullanıcının hash'ini hesaplamak istediği dosyayı seçebileceği bir dosya tarayıcı arayüzü bulunuyor. Kullanıcılar PDF, DOCX gibi çeşitli dosya türlerini seçebiliyor. İkinci görselde ise 'deneme.pdf' dosyası için hesaplanmış gerçek bir SHA-256 hash örneği görülüyor: '9E3FBF...5BAEE4'. Bu 64 karakterlik hexadecimal hash kodu, dosyanın dijital parmak izi gibi çalışarak dosya bütünlüğünü doğrulamaya yarıyor.
+
 
 
 ## 🛠️ Teknoloji Yığını
@@ -60,6 +61,7 @@ Bu görseller, SHA-256 algoritması kullanarak dosyaların hash değerlerinin na
 - **JavaScript** (Dosya işlemleri ve UI etkileşimleri)
 - **Clipboard API** (Kopyala butonları için)
 
+
 ## ⚙️ Kurulum
 
 Projeyi yerel ortamınızda çalıştırmak için:
@@ -70,6 +72,7 @@ cd KriptolojiWeb
 dotnet restore
 dotnet run 
 ```
+
 
 ## 🚀 Uygulamanın Çalıştırılması
 
