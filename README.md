@@ -66,7 +66,12 @@ Bu görseller, SHA-256 algoritması kullanarak dosyaların hash değerlerinin na
 Projeyi yerel ortamınızda çalıştırmak için:
 
 ```bash
-git clone https://github.com/Abood88088/kriptokutusu.git
-cd kriptokutusu
+git clone https://github.com/Abood88088/KriptolojiWeb.git
+cd KriptolojiWeb
+dotnet restore
 dotnet run
+
+```markdown
+Tarayıcınızdan `https://localhost:5001` adresine giderek uygulamayı görüntüleyebilirsiniz.
+
 
