@@ -25,7 +25,8 @@ Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik a
 ## 🖼️  Detaylı Ekran Görüntüleri ve Testler
 
 ### 1. RSA Şifreleme
-![image](https://github.com/user-attachments/assets/4ba1fe73-fe80-4890-950e-ecdbcd860709)   ![image](https://github.com/user-attachments/assets/f64b1dc6-a9e7-4105-8447-d42cf9e23695)
+![image](https://github.com/user-attachments/assets/2cba2120-7248-4ba4-99bb-a4150f09e046)   ![image](https://github.com/user-attachments/assets/43b49664-3741-4400-af6d-972446e73ab7)
+
 
 Bu görsellerde RSA şifreleme süreci örnekleniyor. İlk görselde 'Merhaba Dünya!' metni, verilen public key kullanılarak şifreleniyor. İkinci görselde ise kullanıcı tarafından girilen 'Şifrelenecek metin...', yine bir public key ile işlenerek şifrelenmiş hale getiriliyor. Her iki örnek de asimetrik şifrelemenin temel işleyişini sergiliyor.
 
