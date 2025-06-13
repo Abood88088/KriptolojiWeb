@@ -6,6 +6,63 @@
     --light: #e0e0e0;
 }
 
+.grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.grid-single {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-single > .glass-card {
+    width: 66.66%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .grid-three {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .grid-single > .glass-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #121212 25%, #1a1a1a 50%, #121212 75%, #0a0a0a 100%);
+    background-size: 300% 300%;
+    animation: gradientFlow 15s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 100%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .header {
     text-align: center;
     padding: 3rem 0;
@@ -38,7 +95,7 @@ textarea::placeholder {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -59,7 +116,6 @@ textarea::placeholder {
     transition: all 0.3s ease;
 }
 
-
 .section-title {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -69,9 +125,9 @@ textarea::placeholder {
     gap: 0.5rem;
 }
 
-    .section-title i {
-        font-size: 1.8rem;
-    }
+.section-title i {
+    font-size: 1.8rem;
+}
 
 .input-group {
     margin-bottom: 1.5rem;
@@ -89,33 +145,32 @@ input, textarea {
     padding: 0.8rem;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 5px !important;
     color: var(--light);
     font-family: 'Space Grotesk', monospace;
     transition: all 0.3s;
 }
 
-    input:focus, textarea:focus {
-        outline: none;
-        border-color: var(--primary);
-        box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
-    }
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
 
 textarea {
-    min-height: 120px;
-    resize: vertical;
+    resize: none;
 }
 
 .copyToast {
     visibility: hidden;
     min-width: 120px;
     background-color: #00ff88;
-    color: white;
+    color: black;
     text-align: center;
     border-radius: 4px;
     padding: 8px;
     position: fixed;
-    bottom: 30px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 14px;
@@ -132,7 +187,7 @@ textarea {
     border-radius: 8px;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
@@ -140,13 +195,40 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
-    .btn:hover {
-        background: var(--primary);
-        color: var(--darker);
-    }
+.btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 255, 136, 0.4);
+    color: var(--darker);
+    background: var(--primary);
+}
 
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 45deg, transparent, rgba(255, 255, 255, 0.2), transparent );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    transform: translateX(100%);
+}
+
+.btn:hover i {
+    transform: rotate(15deg) scale(1.2);
+    transition: transform 0.3s ease;
+}
 
 .btn-block {
     width: 100%;
@@ -156,7 +238,7 @@ textarea {
 .result-box {
     margin-top: 1.5rem;
     padding: 1.5rem;
-    background: rgb(255 255 255 / 27%);
+    background: #262626;
     border-radius: 8px;
 }
 
@@ -190,20 +272,69 @@ textarea {
     transition: all 0.2s;
 }
 
-.theme-toggle {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.file-upload-label {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    border: 2px dashed var(--primary);
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 100;
-    border: none;
+    transition: all 0.3s ease;
+    background: rgba(0, 255, 136, 0.05);
+    overflow: hidden;
+}
+
+.file-upload-label:hover {
+    background: rgba(0, 255, 136, 0.1);
+    border-color: var(--primary);
+}
+
+.file-upload-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--darker);
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.file-upload-label:hover .file-upload-button {
+    background: var(--primary);
+    color: black;
+}
+
+.file-upload-text {
+    margin-top: 10px;
+    font-size: 14px;
     color: var(--light);
-    font-size: 1.2rem;
+}
+
+.file-upload-input {
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.file-upload-label::after {
+    content: attr(data-file-name);
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--primary);
+    font-weight: 500;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

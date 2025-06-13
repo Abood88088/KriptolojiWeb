@@ -64,7 +64,6 @@ namespace KriptolojiWeb.Controllers
                 ViewBag.Decrypted = decrypted;
                 ViewBag.Message = "✅ Şifre çözme başarılı.";
             }
-
             return View("Index");
         }
 
@@ -75,6 +74,7 @@ namespace KriptolojiWeb.Controllers
             ViewBag.Hash = hash;
             ViewBag.PublicKey = _rsa.PublicKeyPem;
             ViewBag.PrivateKey = _rsa.PrivateKeyPem;
+            ViewBag.Message = "✅ Hash hesaplama başarılı.";
             return View("Index");
         }
 
@@ -102,5 +102,4 @@ namespace KriptolojiWeb.Controllers
             return View("Index");
         }
     }
-
 }

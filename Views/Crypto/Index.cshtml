@@ -8,7 +8,7 @@
 <div class="container">
     @if (ViewBag.Message != null)
     {
-        <div class="glass-card" style="margin-bottom: 2rem; padding: 1rem; background: rgba(0, 255, 136, 0.1); border-color: var(--primary);">
+        <div class="glass-card" style="color:white; margin-bottom: 2rem; padding: 1rem; background: rgba(0, 255, 136, 0.1); border-color: var(--primary);">
             <div style="display: flex; justify-content: space-between; align-items: center;">
                 <span>@ViewBag.Message</span>
                 <button onclick="this.parentElement.parentElement.remove()" style="background: none; border: none; color: var(--light); cursor: pointer;">
@@ -17,8 +17,31 @@
             </div>
         </div>
     }
-
-    <div class="grid">
+    <!-- First Row - 3 Cards -->
+    <div class="grid-three">
+        <!-- Anahtar Yönetimi -->
+        <div class="glass-card" style="padding: 2rem;">
+            <h3 class="section-title"><i class="fas fa-key"></i> ANAHTAR YÖNETİMİ</h3>
+            <div class="input-group">
+                <label for="publicKeyDisplay">Public Key</label>
+                <textarea id="publicKeyDisplay" rows="5" readonly>@ViewBag.PublicKey</textarea>
+                <button class="copy-btn" data-clipboard-text="@ViewBag.PublicKey" style="margin-top: 0.5rem;">
+                    <i class="far fa-copy"></i> Kopyala
+                </button>
+            </div>
+            <div class="input-group">
+                <label for="privateKeyDisplay">Private Key</label>
+                <textarea id="privateKeyDisplay" rows="5" readonly>@ViewBag.PrivateKey</textarea>
+                <button class="copy-btn" data-clipboard-text="@ViewBag.PrivateKey" style="margin-top: 0.5rem;">
+                    <i class="far fa-copy"></i> Kopyala
+                </button>
+            </div>
+            <form method="post" asp-action="GenerateNewKeys">
+                <button type="submit" class="btn btn-block" style="margin-top: 1rem;">
+                    <i class="fas fa-sync-alt"></i> YENİ ANAHTAR OLUŞTUR
+                </button>
+            </form>
+        </div>
         <!-- RSA Şifreleme -->
         <div class="glass-card" style="padding: 2rem;">
             <h3 class="section-title"><i class="fas fa-lock"></i> RSA ŞİFRELEME</h3>
@@ -29,7 +52,7 @@
                 </div>
                 <div class="input-group">
                     <label for="publicKey">Public Key</label>
-                    <textarea id="publicKey" name="publicKey" placeholder="Public key buraya yapıştırın..." required></textarea>
+                    <textarea id="publicKey" rows="5" name="publicKey" placeholder="Public key buraya yapıştırın..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-block"><i class="fas fa-key"></i> ŞİFRELE</button>
             </form>
@@ -45,7 +68,6 @@
                 </div>
             }
         </div>
-
         <!-- RSA Şifre Çözme -->
         <div class="glass-card" style="padding: 2rem;">
             <h3 class="section-title"><i class="fas fa-unlock"></i> RSA ŞİFRE ÇÖZME</h3>
@@ -56,11 +78,10 @@
                 </div>
                 <div class="input-group">
                     <label for="privateKey">Private Key</label>
-                    <textarea id="privateKey" name="privateKey" placeholder="Private key buraya yapıştırın..." required></textarea>
+                    <textarea id="privateKey" name="privateKey" rows="5" placeholder="Private key buraya yapıştırın..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-block"><i class="fas fa-unlock-alt"></i> ÇÖZ</button>
             </form>
-
             @if (ViewBag.Decrypted != null)
             {
                 <div class="result-box">
@@ -70,36 +91,11 @@
             }
         </div>
     </div>
-
-    <div class="grid">
-        <!-- Anahtar Yönetimi -->
-        <div class="glass-card" style="padding: 2rem;">
-            <h3 class="section-title"><i class="fas fa-key"></i> ANAHTAR YÖNETİMİ</h3>
-            <div class="input-group">
-                <label for="publicKeyDisplay">Public Key</label>
-                <textarea id="publicKeyDisplay" readonly>@ViewBag.PublicKey</textarea>
-                <button class="copy-btn" data-clipboard-text="@ViewBag.PublicKey" style="margin-top: 0.5rem;">
-                    <i class="far fa-copy"></i> Kopyala
-                </button>
-            </div>
-            <div class="input-group">
-                <label for="privateKeyDisplay">Private Key</label>
-                <textarea id="privateKeyDisplay" readonly>@ViewBag.PrivateKey</textarea>
-                <button class="copy-btn" data-clipboard-text="@ViewBag.PrivateKey" style="margin-top: 0.5rem;">
-                    <i class="far fa-copy"></i> Kopyala
-                </button>
-            </div>
-            <form method="post" asp-action="GenerateNewKeys">
-                <button type="submit" class="btn btn-block" style="margin-top: 1rem;">
-                    <i class="fas fa-sync-alt"></i> YENİ ANAHTAR OLUŞTUR
-                </button>
-            </form>
-        </div>
-
+    <!-- Second Row - 1 Card -->
+    <div class="grid-single">
         <!-- SHA-256 HASH -->
         <div class="glass-card" style="padding: 2rem;">
             <h3 class="section-title"><i class="fas fa-fingerprint"></i> SHA-256 HASH</h3>
-
             <!-- Metin Hash -->
             <form method="post" asp-action="Hash">
                 <div class="input-group">
@@ -108,16 +104,17 @@
                 </div>
                 <button type="submit" class="btn btn-block"><i class="fas fa-hashtag"></i> HASH HESAPLA</button>
             </form>
-
             <!-- Dosya Hash -->
             <form method="post" asp-action="HashFile" enctype="multipart/form-data" style="margin-top: 1.5rem;">
                 <div class="input-group">
-                    <label for="uploadedFile">Dosya</label>
-                    <input type="file" id="uploadedFile" name="uploadedFile" required>
+                    <label for="uploadedFile" class="file-upload-label">
+                        <span class="file-upload-button"><i class="fas fa-cloud-upload-alt"></i> Dosya Seçin</span>
+                        <span class="file-upload-text">Dosya seçilmedi</span>
+                        <input type="file" id="uploadedFile" name="uploadedFile" class="file-upload-input" required>
+                    </label>
                 </div>
                 <button type="submit" class="btn btn-block"><i class="fas fa-file-upload"></i> DOSYA HASH HESAPLA</button>
             </form>
-
             @if (ViewBag.Hash != null)
             {
                 <div class="result-box">
@@ -140,19 +137,12 @@
         </div>
     </div>
 </div>
-
-<button class="theme-toggle" id="themeToggle">
-    <i class="fas fa-moon"></i>
-</button>
-
 <div id="copyToast" class="copyToast">Kopyalandı!</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 <script>
     new ClipboardJS('.copy-btn');
-
     const toast = document.getElementById('copyToast');
-
     const clipboard = new ClipboardJS('.copy-btn');
 
     clipboard.on('success', function (e) {
@@ -165,5 +155,12 @@
         }, 2000);
 
         e.clearSelection();
+    });
+
+    document.querySelector('.file-upload-input').addEventListener('change', function(e) {
+        const fileName = e.target.files[0] ? e.target.files[0].name : 'Dosya seçilmedi';
+        const label = e.target.closest('.file-upload-label');
+        label.setAttribute('data-file-name', fileName);
+        label.querySelector('.file-upload-text').textContent = fileName;
     });
 </script>
