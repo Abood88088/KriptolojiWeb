@@ -13,17 +13,22 @@ Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik a
 ![image](https://github.com/user-attachments/assets/baddc637-8507-413e-8bf4-f51c96dc5a66)
 
 
-🌟 Temel Özellikler
-🔐 RSA Şifreleme & Çözme
+# 🌟 Temel Özellikler
+
+**🔐 RSA Şifreleme & Çözme**
+
 Public key ile metin şifreleme ve private key ile şifre çözme işlemleri.
 
-🔑 Dinamik Anahtar Üretimi
+**🔑 Dinamik Anahtar Üretimi**
+
 Tek tıkla yeni RSA anahtar çifti (public/private) oluşturma.
 
-📄 SHA-256 Hash Hesaplama
+**📄 SHA-256 Hash Hesaplama**
+
 Metinler ve dosyalar için benzersiz hash değerleri üretme.
 
-🛡️ Veri Bütünlüğü Doğrulama
+**🛡️ Veri Bütünlüğü Doğrulama**
+
 Dosya veya metinlerdeki değişiklikleri hash karşılaştırmasıyla tespit etme.
 
 
