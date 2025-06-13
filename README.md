@@ -42,21 +42,17 @@ Her iki örnekte de ---BEGIN--- ve ---END--- tag'leri arasında gösterilen anah
 Anahtar yönetimi bölümleri, kullanıcıların yeni anahtar çiftleri oluşturabileceğini ve bu anahtarları şifreleme/çözme işlemlerinde kullanabileceğini gösteriyor. Anahtarların kopyalanabilir olması pratik kullanım kolaylığı sağlıyor.
 
 ### 4. SHA-256 Hash
-**Test Senaryosu**:  
-![image](https://github.com/user-attachments/assets/2c879ce2-84e4-4a1f-8ba9-0ce0833d0da2)   ![image](https://github.com/user-attachments/assets/106c207c-b3f7-4e63-845c-e80370be3309)
-
 **A) Metin Hashleme**
-- **Girdi**: kriptoloji123
-- **Hash Sonucu**: 32f69...11f22 (64 karakter hex)
-- *✅ Doğrulama: Online SHA-256 tool ile aynı sonuç alındı.*
+![image](https://github.com/user-attachments/assets/6a8933f0-2d20-4776-be49-aa72caad5f07)   ![image](https://github.com/user-attachments/assets/1cdf97cd-cd21-4229-acd8-ae5b23ded2ab)
 
-![image](https://github.com/user-attachments/assets/52c63287-7bc9-4cb9-a028-87a5c8a8e93e)   ![image](https://github.com/user-attachments/assets/cc076920-09c4-4b50-b894-8b25cbbcf53d)
+Bu görseller SHA-256 hash algoritmasının kullanımını gösteriyor. İlk görselde 'Merhaba Dünya!' metninin hash değerini hesaplamak için arayüz görülürken, ikinci görselde hesaplanmış örnek bir SHA-256 hash değeri (64 karakterlik hexadecimal bir dize) sunuluyor. SHA-256, tek yönlü bir şifreleme fonksiyonu olup girilen metin veya dosyalardan benzersiz 256-bit hash değerleri üretir.
 
 **B) Dosya Hashleme**
-- **Test Dosyası**: example.txt (İçerik: TEST123)
-- **Hash Sonucu**: 56A70...D629F008
-- *✅ Doğrulama: Online SHA-256 File tool ile aynı sonuç alındı.*
-   
+![image](https://github.com/user-attachments/assets/21a5455e-3c23-479e-8915-d0ab02811712)   ![image](https://github.com/user-attachments/assets/66fcb076-c598-404e-b3ce-27603e2370e4)
+
+Bu görseller, SHA-256 algoritması kullanarak dosyaların hash değerlerinin nasıl hesaplandığını gösteriyor. İlk görselde kullanıcının hash'ini hesaplamak istediği dosyayı seçebileceği bir dosya tarayıcı arayüzü bulunuyor. Kullanıcılar PDF, DOCX gibi çeşitli dosya türlerini seçebiliyor. İkinci görselde ise 'deneme.pdf' dosyası için hesaplanmış gerçek bir SHA-256 hash örneği görülüyor: '9E3FBF...5BAEE4'. Bu 64 karakterlik hexadecimal hash kodu, dosyanın dijital parmak izi gibi çalışarak dosya bütünlüğünü doğrulamaya yarıyor. SHA-256 dosya hashleme özellikle yazılım dağıtımlarında, dijital sertifikalarda ve güvenli dosya transferlerinde sıkça kullanılıyor. Aynı dosya her zaman aynı hash değerini üretirken, dosyadaki tek bir bitin değişmesi bile tamamen farklı bir hash oluşturuyor.
+
+
 ## 🛠️ Teknoloji Yığını
 ### Backend
 - **ASP.NET Core MVC** (v9.0)
