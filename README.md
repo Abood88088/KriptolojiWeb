@@ -80,3 +80,6 @@ Kurulum tamamlandıktan sonra, `dotnet run` komutu ile uygulamayı başlatın ve
 **ABDUL RAHMAN KHANOUM**
 
 <!-- Burada boş satır -->
+<!-- Burada boş satır -->
+<!-- Burada boş satır -->
+
