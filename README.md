@@ -27,33 +27,19 @@ Bu yöntemler, veri gizliliğini ve bütünlüğünü korumada temel güvenlik a
 ### 1. RSA Şifreleme
 ![image](https://github.com/user-attachments/assets/2cba2120-7248-4ba4-99bb-a4150f09e046)   ![image](https://github.com/user-attachments/assets/43b49664-3741-4400-af6d-972446e73ab7)
 
-
 Bu görsellerde RSA şifreleme süreci örnekleniyor. İlk görselde 'Merhaba Dünya!' metni, verilen public key kullanılarak şifreleniyor. İkinci görselde ise kullanıcı tarafından girilen 'Şifrelenecek metin...', yine bir public key ile işlenerek şifrelenmiş hale getiriliyor. Her iki örnek de asimetrik şifrelemenin temel işleyişini sergiliyor.
 
 ### 2. RSA Şifre Çözme
 ![image](https://github.com/user-attachments/assets/dc739896-011c-460c-85f3-38ea0a1e21ad)   ![image](https://github.com/user-attachments/assets/ef4123f5-bce1-4ed0-a37a-140b6338d8d2)
 
-**Test Senaryosu**:  
-- **Şifreli Metin**: Yukarıdaki şifrelenmiş çıktı  
-- **Private Key**: Anahtar üretme bölümündeki eşleşen private key  
-- **Sonuç**: `Çözülmüş Metin: Merhaba Dünya!`
-- *✅ Doğrulama: Orijinal metinle eşleşiyor.*
+Bu görsellerde RSA şifre çözme işlemi adım adım gösteriliyor. İlk görselde, şifrelenmiş metin ve private key kullanılarak çözme işlemi başlatılıyor. İkinci görselde ise 'Merhaba Dünya!' gibi bir metnin, doğru private key ile şifresinin çözüldüğü ve orijinal içeriğin elde edildiği görülüyor. Bu örnekler, RSA'nın şifreleme ve çözme süreçlerinin nasıl çalıştığını net bir şekilde sergiliyor.
 
 ### 3. Anahtar Yönetimi
-![image](https://github.com/user-attachments/assets/2840b45c-a139-478c-8459-209e8ec01841)   ![image](https://github.com/user-attachments/assets/e03ba2d6-d81b-4ad4-8c61-d3bf13400687)
+![image](https://github.com/user-attachments/assets/098cbf2a-a909-4661-a05c-c918d6768c59)   ![image](https://github.com/user-attachments/assets/afbb5cf5-8246-439a-9d9a-aab0dee6832d)
 
-**Test Senaryosu**:  
-- **Buton**: "Yeni Anahtar Oluştur"  
-- **Üretilen Çıktı**:  
-  ```text
-  -----BEGIN PUBLIC KEY-----
-  MIIBIjANBgkqhkiG9w0BAQEF...
-  -----END PUBLIC KEY-----
-  
-  -----BEGIN PRIVATE KEY-----
-  MIIEvAIBADANBgkqhkiG...
-  -----END PRIVATE KEY-----
-- *✅ Doğrulama: Üretilen anahtarlar RSA şifreleme/çözmede çalışıyor.*
+Bu görseller RSA şifreleme sistemindeki anahtar yönetim sürecini gösteriyor. İlk görselde Base64 formatında örnek public/private anahtar çifti ve şifreleme-çözme arayüzü bulunuyor. İkinci görselde ise 'YENİ ANAHTAR OLUŞTUR' butonuyla dinamik olarak yeni RSA anahtar çiftleri üretilebildiği ve bu anahtarların şifreleme işlemlerinde kullanılabileceği görülüyor.
+Her iki örnekte de ---BEGIN--- ve ---END--- tag'leri arasında gösterilen anahtarlar, asimetrik şifrelemenin temel bileşenlerini oluşturuyor. Public key şifreleme, private key ise çözme işlemi için kullanılıyor.
+Anahtar yönetimi bölümleri, kullanıcıların yeni anahtar çiftleri oluşturabileceğini ve bu anahtarları şifreleme/çözme işlemlerinde kullanabileceğini gösteriyor. Anahtarların kopyalanabilir olması pratik kullanım kolaylığı sağlıyor.
 
 ### 4. SHA-256 Hash
 **Test Senaryosu**:  
