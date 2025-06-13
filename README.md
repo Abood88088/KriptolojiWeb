@@ -1,6 +1,6 @@
 # 🔐 Kripto Araç Kutusu
 
-**RSA Şifreleme, Çözme, Anahtar Yönetimi ve SHA-256 Hash Hesaplama Uygulaması**
+🔑 RSA & SHA-256 Tabanlı Basit ve Güvenli Kriptografi Uygulaması
 
 RSA, açık anahtarlı şifreleme algoritmasıdır ve veriyi güvenli şekilde şifrelemek için kullanılır.
 Şifre çözme işlemi, yalnızca özel anahtara sahip olan kişi tarafından yapılabilir.
